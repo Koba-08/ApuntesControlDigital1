@@ -1,5 +1,4 @@
-# ApuntesControlDigital1
-Titulo de la clase
+#Titulo de la clase
 El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
 
 1. Subtítulos
