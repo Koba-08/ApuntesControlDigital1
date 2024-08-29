@@ -7,63 +7,9 @@ Invarianza al impulso: Método de discretización donde se usa la respuesta al i
 
 * Se utiliza la transformada de Laplace del impulso, donde $e(t)$ = $δ(t)$ y su transformada es $e(s)=1$
 * Para un tiempo de muestreo suficientemente pequeño, la relación se obtiene como:
-  $$C(z) = T Z\{\mathcal{L}^{-1}\{C(s)\}\}\big|_{t = kT}$$
-e(t)=δ(t) y su transformada es 
-𝑒
-(
-𝑠
-)
-=
-1
-e(s)=1.
-Se utiliza la transformada de Laplace del impulso, donde 
-𝑒
-(
-𝑡
-)
-=
-𝛿
-(
-𝑡
-)
-e(t)=δ(t) y su transformada es 
-𝑒
-(
-𝑠
-)
-=
-1
-e(s)=1.
-Para un tiempo de muestreo suficientemente pequeño, la relación se obtiene como:
-𝐶
-(
-𝑧
-)
-=
-𝑇
-𝑍
-{
-𝐿
-−
-1
-{
-𝐶
-(
-𝑠
-)
-}
-∣
-𝑡
-=
-𝑘
-𝑇
-}
-C(z)=TZ{L 
-−1
- {C(s)}∣ 
-t=kT
-​
- }
+  $$C(z) = T Z\{\mathcal{{L}^{-1}\{C(s)\}}\}\big|_{t = kT}$$
+
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
