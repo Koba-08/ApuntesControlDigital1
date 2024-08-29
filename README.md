@@ -22,7 +22,7 @@ Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y fina
 
 💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
 
-$$zf(k)=\sum_(k=0)$$
+$$zf(k)=\sum_{k=0}^$$
 
 ## 6. Figuras
 Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
