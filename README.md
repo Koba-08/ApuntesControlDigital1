@@ -10,7 +10,10 @@ Invarianza al impulso: Método de discretización donde se usa la respuesta al i
   
 $$C(z) = T Z\({\mathcal{L}^{-1}\{C(s)\}\}_{t = kT})$$
 
-
+### 1.2. Invarianza al Paso
+Invarianza al paso: Técnica donde se busca obtener el equivalente discreto de un sistema continuo mediante la comparación de respuestas al escalón.
+* Se parte de que la transformada Z de una función paso es:
+  $$Z(e^{t})=\frac{z}{z-1}$$
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
