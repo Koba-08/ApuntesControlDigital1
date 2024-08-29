@@ -6,7 +6,8 @@ Los diversos métodos de discretización buscan aproximar, a través de sistemas
 Invarianza al impulso: Método de discretización donde se usa la respuesta al impulso de un sistema continuo $C(s)$ para obtener su equivalente discreto $C(z)$.
 
 * Se utiliza la transformada de Laplace del impulso, donde $e(t)$ = $δ(t)$ y su transformada es $e(s)=1$
-
+* Para un tiempo de muestreo suficientemente pequeño, la relación se obtiene como:
+  $$C(z) = T Z\{\mathcal{L}^{-1}\{C(s)\}\}\big|_{t = kT}$$
 e(t)=δ(t) y su transformada es 
 𝑒
 (
