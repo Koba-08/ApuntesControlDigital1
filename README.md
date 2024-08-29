@@ -19,10 +19,23 @@ $$Z(e^{t})=\frac{z}{z-1}$$
 * Aplicando fracciones parciales y simplificaciones, se puede llegar a la función discreta correspondiente.
 
 ### 1.3. Método de Euler
-Método de Euler hacia adelante: Aproximación discreta de la derivada utilizando la diferencia hacia adelante.
+#### 1.3.1.Método de Euler hacia adelante 
+Aproximación discreta de la derivada utilizando la diferencia hacia adelante.
 * La derivada discreta se define como:
 
 $$\frac{dx(t)}{dt}\approx \frac{x(k+1)-x(k)}{T}$$
+
+Y al calcular y aplicar la transformada Z se obtiene: $s\approx \frac{z-1}{T}$
+
+Con la cual podemos ver que un controlador en tiempo continuo no necesariamente es estable en tiempo discreto
+
+#### 1.3.2.Método de Euler hacia atras 
+Es la aproximación discreta de la derivada utilizando la diferencia hacia atras.
+* La derivada discreta se define como:
+
+$$\frac{dx(t)}{dt}\approx \frac{x(k)-x(k-1)}{T}$$ 
+
+Y al calcular y aplicar la transformada Z se obtiene: $s\approx \frac{1-z^{-1}}{T}=\frac{z-1}{Tz}$
 
 ### 1.4. Método Trapezoidal (Tustin)
 Método trapezoidal: Aproximación que proporciona una mejor precisión que Euler, utilizando una interpolación lineal para la integración numérica.
