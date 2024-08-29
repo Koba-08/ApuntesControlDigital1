@@ -38,9 +38,9 @@ Teorema de muestreo de Nyquist: Establece que la frecuencia de muestreo $f_{s}$ 
 >🔑*Aliasing:* es el efecto que causa que señales continuas distintas se tornen indistinguibles cuando se muestrean digitalmente.
 
 Para evitar que la señal sufra de esto se sube la frecuencia de muestreo o agregando un filtro a la señal.
-* La condición se expresa como:
-  
-$$f_{s}>2f_{N}$$
+* La condición se expresa como:   $f_{s}>2f_{N}$
+   
+
 ​
 
   debe ser al menos el doble de la frecuencia máxima presente en la señal (frecuencia de Nyquist) para evitar aliasing.
