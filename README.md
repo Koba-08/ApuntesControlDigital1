@@ -13,7 +13,16 @@ $$C(z) = T Z\({\mathcal{L}^{-1}\{C(s)\}\}_{t = kT})$$
 ### 1.2. Invarianza al Paso
 Invarianza al paso: Técnica donde se busca obtener el equivalente discreto de un sistema continuo mediante la comparación de respuestas al escalón.
 * Se parte de que la transformada Z de una función paso es:
-  $$Z(e^{t})=\frac{z}{z-1}$$
+  
+$$Z(e^{t})=\frac{z}{z-1}$$
+
+* Aplicando fracciones parciales y simplificaciones, se puede llegar a la función discreta correspondiente.
+
+### 1.3. Método de Euler
+Método de Euler hacia adelante: Aproximación discreta de la derivada utilizando la diferencia hacia adelante.
+* La derivada discreta se define como:
+
+  $$\frac{dx^{t}}{dt}\approx \frac{x(k+1)-x(k)}{T}$$
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
