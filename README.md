@@ -4,7 +4,16 @@ En esta clase, se va a analizar cómo convertir controladores analógicos en dig
 ### 1.1. Invarianza al Impulso
 Invarianza al impulso: Método de discretización donde se usa la respuesta al impulso de un sistema continuo $C(s)$ para obtener su equivalente discreto $C(z)$.
 
+* Se utiliza la transformada de Laplace del impulso, donde $e(t)$ = $δ(t)$ y su transformada es $e(s)=1$
 
+e(t)=δ(t) y su transformada es 
+𝑒
+(
+𝑠
+)
+=
+1
+e(s)=1.
 Se utiliza la transformada de Laplace del impulso, donde 
 𝑒
 (
