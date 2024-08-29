@@ -1,7 +1,7 @@
 # Discretización de Controladores
 En esta clase, se va a analizar cómo convertir controladores analógicos en digitales, lo cual es fundamental para diseñar sistemas de control modernos. El objetivo es encontrar una forma de igualar o una equivalencia entre el espacio de Laplace y el espacio Z. Se explorarán varios métodos para lograr esta "discretización", cada uno con sus ventajas y desventajas, donde se pueden comparar y elegir el mejor método a utilizar.
 ## 1. Discretización de señales analógicas
-###1.1. Invarianza al Impulso
+### 1.1. Invarianza al Impulso
 Invarianza al impulso: Método de discretización donde se usa la respuesta al impulso de un sistema continuo 
 𝐶
 (
