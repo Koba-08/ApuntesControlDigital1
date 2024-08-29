@@ -1,7 +1,67 @@
-# Conversión A/D y D/A
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# Discretización de Controladores
+En esta clase, se va a analizar cómo convertir controladores analógicos en digitales, lo cual es fundamental para diseñar sistemas de control modernos. El objetivo es encontrar una forma de igualar o una equivalencia entre el espacio de Laplace y el espacio Z. Se explorarán varios métodos para lograr esta "discretización", cada uno con sus ventajas y desventajas, donde se pueden comparar y elegir el mejor método a utilizar.
+## 1. Discretización de señales analógicas
+###1.1. Invarianza al Impulso
+Invarianza al impulso: Método de discretización donde se usa la respuesta al impulso de un sistema continuo 
+𝐶
+(
+𝑠
+)
+C(s) para obtener su equivalente discreto 
+𝐶
+(
+𝑧
+)
+C(z).
+
+Se utiliza la transformada de Laplace del impulso, donde 
+𝑒
+(
+𝑡
+)
+=
+𝛿
+(
+𝑡
+)
+e(t)=δ(t) y su transformada es 
+𝑒
+(
+𝑠
+)
+=
+1
+e(s)=1.
+Para un tiempo de muestreo suficientemente pequeño, la relación se obtiene como:
+𝐶
+(
+𝑧
+)
+=
+𝑇
+𝑍
+{
+𝐿
+−
+1
+{
+𝐶
+(
+𝑠
+)
+}
+∣
+𝑡
+=
+𝑘
+𝑇
+}
+C(z)=TZ{L 
+−1
+ {C(s)}∣ 
+t=kT
+​
+ }
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
