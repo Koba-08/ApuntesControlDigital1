@@ -7,7 +7,7 @@ Invarianza al impulso: Método de discretización donde se usa la respuesta al i
 
 * Se utiliza la transformada de Laplace del impulso, donde $e(t)$ = $δ(t)$ y su transformada es $e(s)=1$
 * Para un tiempo de muestreo suficientemente pequeño, la relación se obtiene como:
-  $$C(z) = Z\{\mathcal{\{L}^{-1}\{C(s)\}\}\}\big|_{t = kT}$$
+  $$C(z) =  Z\{\mathcal{L}^{-1}\{C(s)\}\}\big|_{t = kT}$$
 
 
 
