@@ -24,7 +24,26 @@ Método de Euler hacia adelante: Aproximación discreta de la derivada utilizand
 
 $$\frac{dx(t)}{dt}\approx \frac{x(k+1)-x(k)}{T}$$
 
-## 2. Definiciones
+### 1.4. Método Trapezoidal (Tustin)
+Método trapezoidal: Aproximación que proporciona una mejor precisión que Euler, utilizando una interpolación lineal para la integración numérica.
+* La relación se da como:
+
+$$s=\frac{2}{T}\frac{z-1}{z+1}$$
+
+
+
+## 2. Teorema de Muestreo de Nyquist
+Teorema de muestreo de Nyquist: Establece que la frecuencia de muestreo $f_{s}$ debe ser al menos el doble de la frecuencia máxima presente en la señal (frecuencia de Nyquist) para evitar aliasing.
+
+>🔑*Aliasing:* es el efecto que causa que señales continuas distintas se tornen indistinguibles cuando se muestrean digitalmente.
+
+Para evitar que la señal sufra de esto se sube la frecuencia de muestreo o agregando un filtro a la señal.
+* La condición se expresa como:
+  
+$$f_{s}>2f_{N}$$
+​
+
+  debe ser al menos el doble de la frecuencia máxima presente en la señal (frecuencia de Nyquist) para evitar aliasing.
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
 
@@ -91,7 +110,10 @@ var sumar2 = function(numero) {
 Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
 
 ## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+Se exploraron los principales métodos de discretización de controladores, resaltando tanto sus aplicaciones prácticas como sus limitaciones. La discretización es esencial en el diseño de sistemas de control digital, y la elección del método adecuado depende de factores como la exactitud requerida y el costo computacional asociado.
+
+
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+1.JDEIJ
+2.
