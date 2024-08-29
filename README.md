@@ -140,4 +140,4 @@ Representación: 0,5 / 16 = 0,03125 V
 En el control digital, se utilizan técnicas para convertir señales entre los dominios digital y analógico. El Zero-Order Hold (ZOH) es el método más simple, manteniendo constante el valor de la señal digital durante el intervalo de muestreo. El First Order Hold (FOH) mejora la suavidad de la señal analógica mediante una interpolación lineal entre muestras, mientras que el Second Order Hold (SOH) ofrece una mayor precisión al interpolar con una curva parabólica. Cada método tiene sus propias ventajas y aplicaciones, equilibrando complejidad, precisión y requisitos de procesamiento. En general, la elección del método depende de las necesidades específicas del sistema y de los recursos disponibles
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+1.https://panamahitek.com/discretizacion-de-senales-analogicas/
