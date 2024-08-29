@@ -17,7 +17,7 @@ Sin embargo, también hay algunas limitaciones en la digitalización, como:
 2. Ruido y errores de digitalización.
 3. Requisitos de velocidad y resolución en la conversión.
 
-## conversión analoga digital
+## Conversión analoga digital
 La Conversión Analógico-Digital (CAD) es el proceso por el cual una señal de naturaleza analógica, continua y variable en el tiempo, se convierte en una señal digital, discreta y representada por una secuencia de bits (1 y 0). Este proceso es fundamental en la adquisición y procesamiento de datos en sistemas digitales.
 
 Características clave de la Conversión Analógico-Digital:
@@ -54,7 +54,7 @@ Supongamos que el FS del DAC es 10V.
 |           4        |    10 / 2^4 = 0,625     |0,625 / 10 × 100 = 6,25%                        |
 |           8        |       10 / 2^8 = 0,039  |0,039 / 10 × 100 = 0,39%                        |
 |          16        |  10 / 2^16 = 0,0001526  |0,0001526 / 10 × 100 = 0,001526%                |
-|             32     |10 / 2^32 ≈ 2,33 x 10^-9 |2,33 x 10^-9 / 10 × 100 ≈ 0,0000000233% |
+|             32     |10 / 2^32 ≈ 2,33 x 10^-9 |2,33 x 10^-9 / 10 × 100 ≈ 0,0000000233%         |
 
 Resistores Ponderados
 
@@ -68,7 +68,7 @@ Cómo funciona: En este método se usa una red de resistores con solo dos valore
 Ventajas: Aunque la configuración es más compleja que la de los resistores ponderados, el método R-2R es más preciso y tiene mejor estabilidad porque los errores de tolerancia de los resistores se cancelan entre sí.
 Desventajas: mas complicado de configurar y programar.
 
-## modelo matematico
+## Modelo matemático
 
 Aunque los conversores analógico-digitales (A/D) y digital-analógicos (D/A) realizan operaciones opuestas en las señales, ambos utilizan componentes similares.
 Componentes Comunes:
@@ -115,7 +115,7 @@ Second Order Hold (SOH)
 El Second Order Hold es una técnica más avanzada que utiliza un modelo parabólico para interpolar entre muestras. En lugar de una transición lineal, el SOH asume que la señal analógica sigue una curva parabólica entre dos puntos de muestreo.
 
 en ambos casos es mas complicada tanto la programacion como el montaje, esto añadiendo dificultad y aumentando los costos en ptocesador para poder ejecutar correctamente estas interpolaciones. sin embargo, en ambos casos se obtiene una mejor codificacion y muestreo en la señal analoga por lo que generaria menos perdida de informacion.
-# Ejercicios#
+# Ejercicios
 
 📚 Ejercicio 1:
 
