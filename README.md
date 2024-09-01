@@ -1,76 +1,47 @@
-# Conversión A/D y D/A
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# Estabilidad en Sistemas Discretos
+La estabilidad en sistemas discretos es un aspecto clave en el área del control digital. Un sistema se considera estable cuando su salida se mantiene dentro de ciertos límites al aplicarse una entrada limitada. Existen diferentes enfoques para analizar la estabilidad, como la estabilidad absoluta, la estabilidad asintótica y la estabilidad BIBO. Además, se exploran métodos para evaluar la estabilidad, entre ellos el criterio de Jury, que es especialmente relevante para sistemas discretos.
+## 1. Estabilidad Absoluta
+>🔑 Definición: La estabilidad absoluta es la capacidad de un sistema para mantener su salida dentro de límites establecidos cuando se le aplica una entrada limitada.
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+En sistemas discretos, la estabilidad absoluta se determina observando la respuesta del sistema ante una entrada escalón. Si la salida refleja las mismas características que la entrada, el sistema se considera absolutamente estable.
 
-## 3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+## 2. Comparación entre el Espacio LaPlace y el Espacio Z
+El espacio LaPlace es un dominio matemático usado para el análisis de sistemas continuos, mientras que el espacio Z se emplea para el análisis de sistemas discretos.
+### 2.1. Fronteras de Estabilidad
+En el espacio LaPlace, la estabilidad se delimita por el eje vertical, mientras que en el espacio Z, la ubicación de los polos dentro de un círculo unitario determina la estabilidad.
 
-## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
+💡Ejemplo 1: Análisis de la estabilidad de un sistema en el espacio Z.
+Para el sistema dado con la función de transferencia 
 
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
+$$G(z)=\frac{4}{z^{3}-7.8z^{2}+13.4z+3}$$
 
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
+la solución del polinomio característico revela polos en $z=5,z=3 y z=0.2$  ,lo que indica que el sistema es inestable, ya que dos de los polos están fuera del círculo unitario.
 
-$$zf(k)=\sum_{k=0}^{\alpha }f(k)z^{-k}$$
+## 3. Estabilidad Asintótica
+>🔑 Definición: La estabilidad asintótica describe a un sistema cuya respuesta tiende a cero con el paso del tiempo, independientemente de las condiciones iniciales.
 
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
+Para que un sistema sea asintóticamente estable, su respuesta a cualquier entrada inicial debe disminuir a cero en estado estable.
 
-💡**Ejemplo 2:**
+## 4. Estabilidad BIBO
+Un sistema es BIBO estable si su salida se mantiene dentro de ciertos límites cuando se aplica una entrada acotada.
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+## 5. Test de Jury
+El criterio de Jury es un método utilizado para determinar la estabilidad de un sistema discreto mediante el análisis del polinomio característico de su función de transferencia, sabiendo que el polinomio de una función de transferencia en z tiene esta forma:
 
-Figura 1. Figura de prueba
+$$D(z)=a_{0}Z^{n}+a_{1}Z^{n-1}+...+a_{n-1}Z+a_{n}$$
 
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
+* Es imprescindible emplear el criterio de Jury para determinar la estabilidad de un sistema, para esto se deben cumplir una serie de condiciones las cuales son:
+* $a_{0}> 0$
+* $|a_{n}| < a_{0}$
+* $P(z)|_{z=1} >0$
+* $P(z)|_{z=-1} >0 para n par$ y
+* $P(z)|_{z=-1} <0 para n impar$
+* Construir el arreglo de Jury
+* Cumplir con las condiciones de estabilidad del arreglo de Jury
 
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
 
-💡**Ejemplo 3:** 
+## 6. Conclusiones
+En esta lección, hemos explorado la importancia de la estabilidad en sistemas discretos para asegurar un comportamiento predecible y controlado. A través de ejemplos prácticos y la aplicación del criterio de Jury, se ha demostrado cómo evaluar la estabilidad de un sistema en el dominio Z.
 
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
-## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
-
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
-
-## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+## 7. Referencias
+1.Visioli, A. Digital Control Engineering. 2nd Edition. Elsevier. 2013.
