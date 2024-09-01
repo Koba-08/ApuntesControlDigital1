@@ -8,7 +8,7 @@ Invarianza al impulso: Método de discretización donde se usa la respuesta al i
 * Se utiliza la transformada de Laplace del impulso, donde $e(t)$ = $δ(t)$ y su transformada es $e(s)=1$
 * Para un tiempo de muestreo suficientemente pequeño, la relación se obtiene como:
   
-$$C(z) = T Z\left\{L^{-1}\left\{C(s) \right\}_{t=KT}  \right\}$$
+$$C(z) = T Z\left\{L^{-1}\left\{C(s)\right\}_{t=KT}\right\}$$
 
 ### 1.2. Invarianza al Paso
 Invarianza al paso: Técnica donde se busca obtener el equivalente discreto de un sistema continuo mediante la comparación de respuestas al escalón.
