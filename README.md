@@ -74,3 +74,15 @@ Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede
 
 ## 11. Referencias
 Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+
+
+
+
+| i  | \(\theta_i\)               | \(d_i\)       | \(a_i\)        | \(\alpha_i\) |
+|----|---------------------------|--------------|----------------|-------------|
+| 1  | \(\theta_1\)               | \(L_1\)      | 0              | \(\frac{\pi}{2}\) |
+| 2  | \(\theta_2\)               | 0            | \(L_2\)        | 0           |
+| 3  | \(\frac{\pi}{2} + \theta_3\) | 0          | 0              | 0           |
+| 4  | \(\theta_4\)               | \(L_3 + L_4\)| 0              | \(-\frac{\pi}{2}\) |
+| 5  | \(\frac{\pi}{2} + \theta_5\) | 0          | 0              | \(\frac{\pi}{2}\) |
+| 6  | \(\theta_6\)               | \(L_5 + L_6\)| 0              | 0           |
